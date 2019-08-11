@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIScrollViewDelegate{
 
     @IBOutlet weak var groundView: UIImageView!
     
@@ -18,11 +18,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBOutlet weak var filterButton: UIButton!
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet var zoomTapGestureRecognizer: UITapGestureRecognizer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         secondaryMenu.backgroundColor = UIColor.white.withAlphaComponent(0.5)
         secondaryMenu.translatesAutoresizingMaskIntoConstraints = false
+        zoomTapGestureRecognizer.numberOfTapsRequired = 2
 
     }
 
@@ -129,6 +134,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     // Done Share
     
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return groundView
+    }
+    
+    //Done zoom
+    
+    @IBAction func onTapScrollView(_ sender: UITapGestureRecognizer) {
+        UIView.animate(withDuration: 0.5, animations: {
+            self.scrollView.zoomScale = 1.5 * self.scrollView.zoomScale
+        })
+        
+        
+    }
     
 }
 
