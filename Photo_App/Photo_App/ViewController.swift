@@ -27,7 +27,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // Do any additional setup after loading the view.
         secondaryMenu.backgroundColor = UIColor.white.withAlphaComponent(0.5)
         secondaryMenu.translatesAutoresizingMaskIntoConstraints = false
-        zoomTapGestureRecognizer.numberOfTapsRequired = 2
+        //zoomTapGestureRecognizer.numberOfTapsRequired = 2
 
     }
 
@@ -144,9 +144,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         UIView.animate(withDuration: 0.5, animations: {
             self.scrollView.zoomScale = 1.5 * self.scrollView.zoomScale
         })
-        
-        
     }
+    
+    
     
 }
 

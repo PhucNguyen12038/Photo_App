@@ -15,6 +15,7 @@
 		D173FEEE22F6C07D002BFC0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D173FEEC22F6C07D002BFC0A /* LaunchScreen.storyboard */; };
 		D17B820322FECDD9008CABE3 /* RGBAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17B820222FECDD9008CABE3 /* RGBAImage.swift */; };
 		D1DED41322F7FA9F00A0062A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DED41222F7FA9F00A0062A /* TableViewController.swift */; };
+		D1F538D12300616D0066EA3E /* Photo_Tap_Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F538D02300616D0066EA3E /* Photo_Tap_Handler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D173FEEF22F6C07D002BFC0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D17B820222FECDD9008CABE3 /* RGBAImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBAImage.swift; sourceTree = "<group>"; };
 		D1DED41222F7FA9F00A0062A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		D1F538D02300616D0066EA3E /* Photo_Tap_Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo_Tap_Handler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				D173FEEF22F6C07D002BFC0A /* Info.plist */,
 				D173FEE722F6C07B002BFC0A /* Photo_App.xcdatamodeld */,
 				D1DED41222F7FA9F00A0062A /* TableViewController.swift */,
+				D1F538D02300616D0066EA3E /* Photo_Tap_Handler.swift */,
 			);
 			path = Photo_App;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				D17B820322FECDD9008CABE3 /* RGBAImage.swift in Sources */,
 				D173FEE322F6C07B002BFC0A /* ViewController.swift in Sources */,
 				D173FEE922F6C07B002BFC0A /* Photo_App.xcdatamodeld in Sources */,
+				D1F538D12300616D0066EA3E /* Photo_Tap_Handler.swift in Sources */,
 				D173FEE122F6C07B002BFC0A /* AppDelegate.swift in Sources */,
 				D1DED41322F7FA9F00A0062A /* TableViewController.swift in Sources */,
 			);
