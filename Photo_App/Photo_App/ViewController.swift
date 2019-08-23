@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MessageUI
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIScrollViewDelegate{
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIScrollViewDelegate,MFMailComposeViewControllerDelegate{
 
     @IBOutlet weak var groundView: UIImageView!
     
@@ -146,7 +147,23 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         })
     }
     
+    @IBAction func onEmail(_ sender: Any) {
+        guard MFMailComposeViewController.canSendMail() else {
+            print("Can not send email")
+            return
+        }
+        let mailComposer = MFMailComposeViewController()
+        mailComposer.mailComposeDelegate = self
+        mailComposer.setToRecipients(["nguyenhuuphuc12038@yahoo.com"])
+        mailComposer.setSubject("Test email function phone app")
+        mailComposer.setMessageBody("I try to send email from my app", isHTML: false)
+        present(mailComposer, animated: true, completion: nil)
+    }
     
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        dismiss(animated: true, completion: nil)
+    }
     
+    // Done email
 }
 

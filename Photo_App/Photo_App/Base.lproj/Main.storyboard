@@ -62,10 +62,14 @@
                                                     <action selector="onFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fvx-iX-bsQ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsT-0b-r3j" userLabel="Compare">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsT-0b-r3j" userLabel="Email">
                                                 <rect key="frame" x="150" y="0.0" width="75" height="59"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" image="Compare"/>
+                                                <inset key="imageEdgeInsets" minX="28" minY="22" maxX="28" maxY="22"/>
+                                                <state key="normal" image="email"/>
+                                                <connections>
+                                                    <action selector="onEmail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T0f-ek-22L"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpO-8O-LZh" userLabel="Share">
                                                 <rect key="frame" x="225" y="0.0" width="75" height="59"/>
@@ -173,15 +177,15 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="343"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FilterCell" textLabel="aBh-7J-Wpg" style="IBUITableViewCellStyleDefault" id="Png-VY-Axs">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FilterCell" textLabel="aBh-7J-Wpg" rowHeight="216" style="IBUITableViewCellStyleDefault" id="Png-VY-Axs">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="216"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Png-VY-Axs" id="eV5-yD-MSt">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="215.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aBh-7J-Wpg">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="215.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -238,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BeM-m7-8ob" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2804" y="133.5832083958021"/>
+            <point key="canvasLocation" x="2722" y="134"/>
         </scene>
         <!--Color-->
         <scene sceneID="QZx-3v-DVn">
@@ -307,7 +311,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lPw-z6-9AN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1864.8" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1895" y="134"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="fNs-RZ-Kkd">
@@ -315,6 +319,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="DLV-Km-x6W" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fwx-et-gai">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -345,11 +350,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Compare" width="44" height="44"/>
         <image name="Filter" width="44" height="44"/>
         <image name="NewPhoto" width="44" height="44"/>
         <image name="Share" width="44" height="44"/>
         <image name="earth" width="178" height="178"/>
+        <image name="email" width="444" height="337"/>
         <image name="landscape" width="1280" height="853"/>
         <image name="reading" width="528" height="337"/>
     </resources>
